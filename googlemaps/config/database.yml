@@ -9,10 +9,10 @@ development:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: googlemaps_development
+  database: railsuser_googlemaps_development
   pool: 5
-  username: root
-  password:
+  username: railsuser
+  password: railspass
   socket: /var/run/mysqld/mysqld.sock
 
 # Warning: The database defined as "test" will be erased and
@@ -22,18 +22,18 @@ test:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: googlemaps_test
+  database: railsuser_googlemaps_test
   pool: 5
-  username: root
-  password:
+  username: railsuser
+  password: railspass
   socket: /var/run/mysqld/mysqld.sock
 
 production:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: googlemaps_production
+  database: railsuser_googlemaps_production
   pool: 5
-  username: root
-  password:
+  username: railsuser
+  password: railspass
   socket: /var/run/mysqld/mysqld.sock

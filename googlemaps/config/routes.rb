@@ -1,4 +1,8 @@
 Googlemaps::Application.routes.draw do
+  get "map/index"
+
+  get "map_controllers/index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
