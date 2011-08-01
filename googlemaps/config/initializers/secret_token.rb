@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Googlemaps::Application.config.secret_token = '90dbcd60f0b5c3492f65bb0565c7c971fde6a12c40bcc88970f14381bec785b69f71612323b8cf3ca7e2209ff484912a573ffcaecd786067d8426a05457ef3d3'
+Googlemaps::Application.config.secret_token = 'dbab9a9805e7e8d1aaf7237ebf5be5baeef2a785b74357b251e817f474f9a51e3014830b2a555a2cd242d08173f8ff652358993cfd2dfca61563f7baac32e4f0'
