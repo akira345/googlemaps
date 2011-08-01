@@ -4,7 +4,6 @@ module Ym4r
     module MappingObject
       #The name of the variable in JavaScript space.
       attr_reader :variable
-      
       #Creates javascript code for missing methods + takes care of listeners
       def method_missing(name,*args)
         str_name = name.to_s
@@ -118,6 +117,9 @@ module Ym4r
       end
       #Returns the expression inside the Variable followed by a ";"
       def to_s
+        @variable + ";"
+      end
+      def to_str 
         @variable + ";"
       end
 

@@ -9,8 +9,8 @@ class MapController < ApplicationController
     @map.control_init(:large_map => true, :map_type => true)  
     # マーカの指定  
     @map.overlay_init(GMarker.new(palo_alto,  
-      :title => "パロアルト",  
-      :info_window => "これは情報窓"  
+      :title => "TITLE",  
+      :info_window => "Thiw info window"  
       )  
     )  
 
