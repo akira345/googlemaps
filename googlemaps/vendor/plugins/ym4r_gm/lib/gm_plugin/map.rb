@@ -11,7 +11,8 @@ module Ym4r
       attr_reader :container
       
       #By default the map in the HTML page will be globally accessible with the name +map+.
-      def initialize(container, variable = "map")
+      def initialize(container, variable = "map",init_option)
+		 @init_option = init_option
         @container = container
         @variable = variable
         @init = []
@@ -275,7 +276,11 @@ module Ym4r
       
       #Outputs in JavaScript the creation of a GMap2 object 
       def create
+		if @init_option
+        "new GMap2(document.getElementById(\"#{@container}\"),{#{@init_option}})"
+		else
         "new GMap2(document.getElementById(\"#{@container}\"))"
+		end
       end
     end
   end
